@@ -1,0 +1,6 @@
+cd /Users/gertgeyer/Website
+
+git init
+git add .
+git commit -m "Initial commit: portfolio site"
+git branch -M main
