@@ -446,7 +446,7 @@ body {
 
 .shop__teaser {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
   margin-top: 2rem;
   max-width: 42rem;
@@ -580,10 +580,6 @@ body {
   }
 
   .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .shop__teaser {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
