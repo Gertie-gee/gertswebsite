@@ -5,7 +5,6 @@
   --accent-textiles: #b54832; /* rust red */
   --accent-wearables: #87b9b5; /* soft teal */
   --accent-murals: #f5b52e; /* mustard */
-  --accent-shop: #f2a7a4; /* dusty pink */
   --font-display: "Baloo 2", system-ui, -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", sans-serif;
   --font-body: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -342,11 +341,6 @@ body {
   animation: float 10s ease-in-out infinite;
 }
 
-.door--shop {
-  background: var(--accent-shop);
-  border: 2px dashed rgba(0, 0, 0, 0.35);
-}
-
 .door:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
@@ -437,81 +431,6 @@ body {
     #f4c0a4;
   color: rgba(0, 0, 0, 0.7);
   font-size: 0.9rem;
-}
-
-.section--shop {
-  background: #fff;
-  text-align: left;
-}
-
-.shop__teaser {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-top: 2rem;
-  max-width: 42rem;
-}
-
-.shop__teaser-item {
-  position: relative;
-  display: block;
-  border-radius: 1rem;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  aspect-ratio: 1;
-  text-decoration: none;
-  color: inherit;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.shop__teaser-item:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
-  transform: translateY(-2px);
-}
-
-.shop__teaser-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.shop__teaser-caption {
-  position: absolute;
-  inset: 0;
-  background: rgba(22, 21, 22, 0.75);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  font-weight: 700;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
-
-.shop__teaser-item:hover .shop__teaser-caption {
-  opacity: 1;
-}
-
-.section--shop .cta {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.4rem;
-  border-radius: 999px;
-  background: var(--accent-shop);
-  color: var(--ink);
-  text-decoration: none;
-  font-size: 0.95rem;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
-  transition: transform 160ms ease-out, box-shadow 160ms ease-out;
-}
-
-.section--shop .cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
 .section--contact {
