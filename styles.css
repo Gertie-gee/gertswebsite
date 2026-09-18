@@ -65,7 +65,7 @@ body {
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .site-nav__link {
@@ -84,6 +84,26 @@ body {
   display: block;
   height: 1.75rem;
   width: auto;
+}
+
+.site-nav__img--baby-dog {
+  /* Match visual letter height of Work/About/Contact (see FORMS-SETUP / nav asset notes). */
+  height: 1.75rem;
+  transform: translateY(-0.1rem);
+}
+
+.site-nav__link--text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--ink);
+  align-self: center;
+}
+
+.site-nav__link--text[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
 
 /* Mixed work grid (Craig & Karl style) */
@@ -461,6 +481,327 @@ body {
   flex-wrap: wrap;
 }
 
+/* —— Baby Dog Studio (Mazda 2 Rally page) —— */
+.bds {
+  background: var(--bg);
+}
+
+.bds-hero {
+  padding: 3rem 1.5rem 4rem;
+  background: #fff;
+  border-bottom: 3px solid var(--ink);
+}
+
+.bds-hero__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 2.5rem 3rem;
+  align-items: center;
+}
+
+.bds-hero__title {
+  margin: 0 0 1rem;
+  line-height: 0;
+}
+
+.bds-hero__lede {
+  margin: 0 0 2rem;
+  max-width: 28rem;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.bds-hero__presents {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-textiles);
+}
+
+.bds-hero__project {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.bds-hero__tagline {
+  margin: 0 0 1.75rem;
+  max-width: 26rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.bds-btn {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--accent-murals);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 120ms ease-out, box-shadow 120ms ease-out;
+}
+
+.bds-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.bds-btn:focus-visible {
+  outline: 3px solid var(--accent-wearables);
+  outline-offset: 3px;
+}
+
+.bds-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.bds-hero__media {
+  margin: 0;
+  position: relative;
+}
+
+.bds-hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bds-section {
+  padding: 3.5rem 1.5rem;
+}
+
+.bds-section--warm {
+  background: #fbeee2;
+}
+
+.bds-section--form {
+  background: #fff;
+  border-top: 3px solid var(--ink);
+  border-bottom: 3px solid var(--ink);
+}
+
+.bds-section--about {
+  background: var(--bg);
+  padding-bottom: 2rem;
+}
+
+.bds-section__inner {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.bds-section__heading {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.bds-prose p {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.bds-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.bds-form-wrap {
+  max-width: 32rem;
+}
+
+.bds-form__intro {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+}
+
+.bds-form__status {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.bds-form__status--error {
+  color: #8b2e2e;
+  font-weight: 500;
+}
+
+.bds-form__honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.bds-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bds-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.bds-form__field label,
+.bds-form__fieldset legend {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.bds-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.bds-form__fieldset legend {
+  padding: 0;
+}
+
+.bds-required {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: rgba(23, 21, 22, 0.65);
+}
+
+.bds-form__field input[type="text"],
+.bds-form__field input[type="email"],
+.bds-form__field select,
+.bds-form__field textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 2px solid rgba(23, 21, 22, 0.25);
+  border-radius: 0.35rem;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+}
+
+.bds-form__field input:focus-visible,
+.bds-form__field select:focus-visible,
+.bds-form__field textarea:focus-visible {
+  outline: 3px solid var(--accent-wearables);
+  outline-offset: 1px;
+  border-color: var(--ink);
+}
+
+.bds-form__field--invalid input,
+.bds-form__field--invalid select,
+.bds-form__field--invalid textarea,
+.bds-form__fieldset--invalid .bds-form__radios {
+  border-color: #8b2e2e;
+}
+
+.bds-form__fieldset--invalid .bds-form__radios {
+  border: 2px solid #8b2e2e;
+  border-radius: 0.35rem;
+  padding: 0.5rem;
+}
+
+.bds-form__error {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: #8b2e2e;
+  min-height: 1.1em;
+}
+
+.bds-form__radios {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bds-form__radio,
+.bds-form__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.bds-form__radio input,
+.bds-form__checkbox input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.bds-btn--submit {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.bds-form__privacy {
+  margin: 1.75rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(23, 21, 22, 0.7);
+}
+
+.bds-success {
+  padding: 1.5rem 0;
+}
+
+.bds-success__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bds-success p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.bds-back-link {
+  margin-top: 2rem;
+}
+
+.bds-back-link a {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.bds-footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+}
+
 @media (max-width: 900px) {
   .work-grid__inner {
     grid-template-columns: repeat(3, 1fr);
@@ -477,6 +818,14 @@ body {
   .section__inner--about {
     grid-template-columns: minmax(0, 1fr);
     gap: 1.75rem;
+  }
+
+  .bds-hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bds-hero__media {
+    order: -1;
   }
 }
 
@@ -500,6 +849,14 @@ body {
 
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bds-form__row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .site-nav__link--text {
+    font-size: 0.9rem;
   }
 }
 

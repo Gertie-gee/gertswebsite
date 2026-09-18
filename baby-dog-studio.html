@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Dog Studio | Gert Geyer</title>
+    <meta
+      name="description"
+      content="Baby Dog Studio makes art, stories, events and objects celebrating the places, people and strange little things we love. Join the inaugural Mazda 2 Rally in Brisbane."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo"><img src="assets/gert-geyer-logo.png" alt="Gert Geyer" class="site-logo__img" /></a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="index.html#work" class="site-nav__link"><img src="assets/section-work.png" alt="Work" class="site-nav__img" /></a>
+          <a href="index.html#about" class="site-nav__link"><img src="assets/section-about.png" alt="About" class="site-nav__img" /></a>
+          <a href="baby-dog-studio.html" class="site-nav__link" aria-current="page"><img src="assets/baby-dog-studio-title.png" alt="Baby Dog Studio" class="site-nav__img site-nav__img--baby-dog" /></a>
+          <a href="index.html#contact" class="site-nav__link"><img src="assets/section-contact.png" alt="Contact" class="site-nav__img" /></a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bds" id="main-content">
+      <!-- HERO — edit intro copy in .bds-editable blocks -->
+      <section class="bds-hero" aria-labelledby="bds-hero-title">
+        <div class="bds-hero__inner">
+          <div class="bds-hero__copy">
+            <h1 class="bds-hero__title" id="bds-hero-title">
+              <img
+                src="assets/baby-dog-studio-title.png"
+                alt="Baby Dog Studio"
+                class="section-title__img"
+                width="1024"
+                height="171"
+              />
+            </h1>
+            <p class="bds-hero__lede bds-editable">
+              Stories, art, events and objects about the places, people and
+              strange little things we love.
+            </p>
+            <p class="bds-hero__presents">Baby Dog Studio presents</p>
+            <h2 class="bds-hero__project">The Mazda 2 Rally</h2>
+            <p class="bds-hero__tagline bds-editable">
+              A completely unnecessary celebration of an extremely good little
+              car.
+            </p>
+            <a class="bds-btn" href="#join-the-rally">I have a Mazda 2</a>
+          </div>
+          <figure class="bds-hero__media">
+            <img
+              class="bds-hero__img"
+              src="assets/mazda-2-rally-hero.png"
+              alt="The Mazda 2 Rally — illustration of a red Mazda 2 with a fluffy dog at the wheel."
+              width="1024"
+              height="1014"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- PROJECT INTRODUCTION -->
+      <section class="bds-section" aria-labelledby="still-drive-heading">
+        <div class="bds-section__inner bds-prose">
+          <h2 class="bds-section__heading" id="still-drive-heading">
+            Do you still drive one?
+          </h2>
+          <div class="bds-editable">
+            <p>We're looking for Brisbane's early Mazda 2s.</p>
+            <p>
+              These extremely practical little cars have been getting people
+              around for more than 20 years, and we think that's worth
+              celebrating.
+            </p>
+            <p>So we're getting a bunch of them together.</p>
+            <p>
+              There'll be a commemorative T-shirt, a drive, a BBQ, some
+              extremely prestigious Mazda 2 awards and a group photograph of as
+              many little Mazda 2s as we can find.
+            </p>
+            <p>If you've got one, we want to hear from you.</p>
+            <p>
+              The event is free and the commemorative T-shirt is free for
+              participating Mazda 2 owners.
+            </p>
+            <p>
+              Exact rally date, meeting place and route will be announced once
+              we've found our inaugural group of Mazda 2 people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY -->
+      <section class="bds-section bds-section--warm" aria-labelledby="why-heading">
+        <div class="bds-section__inner bds-prose">
+          <h2 class="bds-section__heading" id="why-heading">
+            Why are you doing this?
+          </h2>
+          <div class="bds-editable">
+            <p>
+              Baby Dog Studio is interested in the ordinary things that become
+              part of our lives — the places, objects, stories and rituals that
+              somehow end up meaning something to us.
+            </p>
+            <p>
+              The Mazda 2 Rally started with my own little red Mazda 2.
+            </p>
+            <p>
+              I covered its bonnet in an artwork about the people, animals,
+              places and ridiculous things that make up my world. Then I started
+              wondering about all the other old Mazda 2s I see driving around
+              Brisbane.
+            </p>
+            <p>
+              Who owns them? How long have they had them? Where have these cars
+              been? And why are they still going?
+            </p>
+            <p>So I thought we should get them together.</p>
+            <p>This is the first Baby Dog Studio project.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REGISTRATION -->
+      <section
+        class="bds-section bds-section--form"
+        id="join-the-rally"
+        aria-labelledby="join-heading"
+      >
+        <div class="bds-section__inner bds-form-wrap">
+          <h2 class="bds-section__heading" id="join-heading">Join the rally</h2>
+          <p class="bds-form__intro bds-editable">
+            Got an early Mazda 2? Tell us about it.
+          </p>
+
+          <div
+            class="bds-form__status"
+            id="rally-form-status"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <div class="bds-success" id="rally-success" hidden tabindex="-1">
+            <h3 class="bds-success__title">You're in.</h3>
+            <p>
+              Thanks for joining the inaugural Mazda 2 Rally.
+            </p>
+            <p>
+              We'll email you when we've rounded up enough little Mazdas and
+              have the rally details ready.
+            </p>
+            <p>
+              In the meantime: if you see another old Mazda 2 in the wild, tell
+              them we're looking for them.
+            </p>
+          </div>
+
+          <form class="bds-form" id="rally-form" novalidate>
+            <div class="bds-form__honeypot" aria-hidden="true">
+              <label for="rally-website">Website</label>
+              <input
+                type="text"
+                id="rally-website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-name">Name <span class="bds-required">(required)</span></label>
+              <input
+                type="text"
+                id="rally-name"
+                name="name"
+                required
+                autocomplete="name"
+              />
+              <span class="bds-form__error" id="rally-name-error"></span>
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-email">Email address <span class="bds-required">(required)</span></label>
+              <input
+                type="email"
+                id="rally-email"
+                name="email"
+                required
+                autocomplete="email"
+                inputmode="email"
+              />
+              <span class="bds-form__error" id="rally-email-error"></span>
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-suburb">Suburb <span class="bds-required">(required)</span></label>
+              <input
+                type="text"
+                id="rally-suburb"
+                name="suburb"
+                required
+                autocomplete="address-level2"
+              />
+              <span class="bds-form__error" id="rally-suburb-error"></span>
+            </div>
+
+            <div class="bds-form__row">
+              <div class="bds-form__field">
+                <label for="rally-year">Mazda 2 year <span class="bds-required">(required)</span></label>
+                <input
+                  type="text"
+                  id="rally-year"
+                  name="mazda_year"
+                  required
+                  inputmode="numeric"
+                  autocomplete="off"
+                />
+                <span class="bds-form__error" id="rally-year-error"></span>
+              </div>
+              <div class="bds-form__field">
+                <label for="rally-colour">Mazda 2 colour <span class="bds-required">(required)</span></label>
+                <input
+                  type="text"
+                  id="rally-colour"
+                  name="mazda_colour"
+                  required
+                  autocomplete="off"
+                />
+                <span class="bds-form__error" id="rally-colour-error"></span>
+              </div>
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-km">Approximate kilometres</label>
+              <input
+                type="text"
+                id="rally-km"
+                name="kilometres"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-owned">How long have you owned it?</label>
+              <input
+                type="text"
+                id="rally-owned"
+                name="owned_duration"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-story">Tell us something about your Mazda 2</label>
+              <textarea
+                id="rally-story"
+                name="mazda_story"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <div class="bds-form__field">
+              <label for="rally-shirt">T-shirt size <span class="bds-required">(required)</span></label>
+              <select id="rally-shirt" name="tshirt_size" required>
+                <option value="">Choose a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2XL">2XL</option>
+                <option value="3XL">3XL</option>
+              </select>
+              <span class="bds-form__error" id="rally-shirt-error"></span>
+            </div>
+
+            <fieldset class="bds-form__fieldset">
+              <legend>
+                Are you interested in attending the Mazda 2 Rally?
+                <span class="bds-required">(required)</span>
+              </legend>
+              <div class="bds-form__radios">
+                <label class="bds-form__radio">
+                  <input type="radio" name="attendance" value="Yes" required />
+                  Yes
+                </label>
+                <label class="bds-form__radio">
+                  <input type="radio" name="attendance" value="Maybe" />
+                  Maybe
+                </label>
+                <label class="bds-form__radio">
+                  <input type="radio" name="attendance" value="I just want to hear more" />
+                  I just want to hear more
+                </label>
+              </div>
+              <span class="bds-form__error" id="rally-attendance-error"></span>
+            </fieldset>
+
+            <div class="bds-form__field bds-form__field--checkbox">
+              <label class="bds-form__checkbox">
+                <input
+                  type="checkbox"
+                  id="rally-consent"
+                  name="email_consent"
+                  value="yes"
+                  required
+                />
+                I'm happy for Baby Dog Studio to contact me by email about the
+                Mazda 2 Rally.
+              </label>
+              <span class="bds-form__error" id="rally-consent-error"></span>
+            </div>
+
+            <button type="submit" class="bds-btn bds-btn--submit" id="rally-submit">
+              Count me in
+            </button>
+          </form>
+
+          <p class="bds-form__privacy">
+            Your details will only be used to organise the Mazda 2 Rally and
+            contact you about this project. Baby Dog Studio won't sell or share
+            your contact details.
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT BABY DOG STUDIO -->
+      <section class="bds-section bds-section--about" aria-labelledby="what-is-heading">
+        <div class="bds-section__inner bds-prose">
+          <h2 class="bds-section__heading" id="what-is-heading">
+            What is Baby Dog Studio?
+          </h2>
+          <div class="bds-editable">
+            <p>
+              Baby Dog Studio is an artist-led project by Gert Geyer making
+              stories, artworks, events and objects that celebrate the places
+              and communities around us.
+            </p>
+            <p>
+              Sometimes we make our own strange little projects. Sometimes we
+              work with other people and communities to make theirs.
+            </p>
+            <p>This is project number one.</p>
+          </div>
+          <p class="bds-back-link">
+            <a href="index.html">← Back to the Gert Geyer artist website</a>
+          </p>
+        </div>
+      </section>
+
+      <footer class="site-footer bds-footer">
+        <span>© <span id="year"></span> Gert Geyer · Baby Dog Studio</span>
+      </footer>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="baby-dog-studio.js"></script>
+  </body>
+</html>
