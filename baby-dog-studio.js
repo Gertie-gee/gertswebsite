@@ -6,6 +6,7 @@
  * Example: "https://formspree.io/f/abcdefgh"
  */
 const RALLY_FORM_ENDPOINT = "https://formspree.io/f/xljdeqdd";
+const MAZDA_EXPLOSION_SRC = "assets/mazda-etch-explosion.png";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -221,5 +222,42 @@ function initRallyForm() {
   });
 }
 
+function spawnMazdaDrive(x, y) {
+  document.querySelectorAll(".bds-drive__car").forEach((el) => el.remove());
+
+  const img = document.createElement("img");
+  img.src = MAZDA_EXPLOSION_SRC;
+  img.alt = "";
+  img.className = "bds-drive__car";
+  img.setAttribute("aria-hidden", "true");
+
+  const goRight = x < window.innerWidth / 2;
+  const startX = goRight ? -120 : window.innerWidth + 120;
+  const endX = goRight ? window.innerWidth + 120 : -120;
+  const driveY = Math.min(Math.max(y, 80), window.innerHeight - 80);
+
+  img.style.setProperty("--bds-drive-y", `${driveY}px`);
+  img.style.setProperty("--bds-drive-start", `${startX}px`);
+  img.style.setProperty("--bds-drive-end", `${endX}px`);
+  if (!goRight) {
+    img.classList.add("bds-drive__car--left");
+  }
+
+  img.addEventListener("animationend", () => img.remove());
+  document.body.appendChild(img);
+}
+
+function initMazdaDrive() {
+  const main = document.querySelector(".bds");
+  if (!main) return;
+
+  main.addEventListener("click", (event) => {
+    const button = event.target.closest("button, .bds-btn");
+    if (!button || !main.contains(button)) return;
+    spawnMazdaDrive(event.clientX, event.clientY);
+  });
+}
+
 setYear();
 initRallyForm();
+initMazdaDrive();

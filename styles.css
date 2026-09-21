@@ -87,9 +87,7 @@ body {
 }
 
 .site-nav__img--baby-dog {
-  /* Match visual letter height of Work/About/Contact (see FORMS-SETUP / nav asset notes). */
-  height: 1.75rem;
-  transform: translateY(-0.1rem);
+  height: calc(2.15rem * 1.2 * 1.25);
 }
 
 .site-nav__link--text {
@@ -252,8 +250,7 @@ body {
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   margin: 0 0 0.5rem;
   font-family: var(--font-display);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .section__tagline {
@@ -279,8 +276,7 @@ body {
   font-size: clamp(2.8rem, 5.4vw, 3.9rem);
   margin: 0 0 1rem;
   font-family: var(--font-display);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .hero__intro p {
@@ -381,8 +377,7 @@ body {
   right: 0;
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 7vw, 4rem);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.03);
   pointer-events: none;
 }
@@ -507,37 +502,13 @@ body {
 }
 
 .bds-hero__lede {
-  margin: 0 0 2rem;
-  max-width: 28rem;
-  font-size: 1.15rem;
-  line-height: 1.55;
-}
-
-.bds-hero__presents {
-  margin: 0 0 0.35rem;
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent-textiles);
-}
-
-.bds-hero__project {
-  margin: 0 0 0.75rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.65rem, 4vw, 2.35rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.bds-hero__tagline {
   margin: 0 0 1.75rem;
-  max-width: 26rem;
-  font-size: 1.05rem;
-  line-height: 1.5;
+  max-width: 22rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4.5vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 
 .bds-btn {
@@ -550,8 +521,7 @@ body {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
   box-shadow: 4px 4px 0 var(--ink);
@@ -615,8 +585,7 @@ body {
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   line-height: 1.2;
 }
 
@@ -778,8 +747,7 @@ body {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
 }
 
 .bds-success p {
@@ -800,6 +768,42 @@ body {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 1.5rem 2.5rem;
+}
+
+.bds-drive__car {
+  position: fixed;
+  z-index: 1000;
+  left: var(--bds-drive-start);
+  top: var(--bds-drive-y);
+  width: 6.5rem;
+  height: auto;
+  pointer-events: none;
+  transform: translateY(-50%);
+  animation: bds-mazda-drive 4s ease-in-out forwards;
+}
+
+.bds-drive__car--left {
+  transform: translateY(-50%) scaleX(-1);
+}
+
+@keyframes bds-mazda-drive {
+  0% {
+    opacity: 0;
+    left: var(--bds-drive-start);
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: var(--bds-drive-end);
+  }
 }
 
 @media (max-width: 900px) {
