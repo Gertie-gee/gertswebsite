@@ -663,10 +663,15 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.bds-search-counter__stat {
-  margin: 0.25rem 0;
+.bds-search-counter__list {
+  margin: 0;
+  padding-left: 1.25rem;
   font-size: 1.05rem;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.bds-search-counter__list li + li {
+  margin-top: 0.35rem;
 }
 
 .bds-form__status {
