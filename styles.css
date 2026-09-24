@@ -599,6 +599,11 @@ body {
   margin-bottom: 0;
 }
 
+.bds-prose a {
+  color: var(--ink);
+  font-weight: 500;
+}
+
 .bds-form-wrap {
   max-width: 32rem;
 }
