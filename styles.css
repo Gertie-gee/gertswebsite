@@ -643,6 +643,7 @@ body {
 
 .bds-section--counter {
   padding-top: 0;
+  background: #fff;
 }
 
 .bds-search-counter {
@@ -654,7 +655,7 @@ body {
 
 .bds-search-counter__img {
   flex-shrink: 0;
-  width: 5.5rem;
+  width: 10rem;
   height: auto;
 }
 
