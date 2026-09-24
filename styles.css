@@ -502,13 +502,24 @@ body {
 }
 
 .bds-hero__lede {
-  margin: 0 0 1.75rem;
+  margin: 0 0 1rem;
   max-width: 22rem;
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 4.5vw, 2.6rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.01em;
+}
+
+.bds-hero__copy .bds-editable p {
+  margin: 0 0 1rem;
+  max-width: 28rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.bds-hero__copy .bds-editable p:last-child {
+  margin-bottom: 1.5rem;
 }
 
 .bds-btn {
@@ -608,9 +619,53 @@ body {
   max-width: 32rem;
 }
 
+.bds-form__subheading {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .bds-form__intro {
   margin: 0 0 1.5rem;
   font-size: 1.05rem;
+}
+
+.bds-form__intro p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.bds-form__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.bds-section--counter {
+  padding-top: 0;
+}
+
+.bds-search-counter {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 40rem;
+}
+
+.bds-search-counter__img {
+  flex-shrink: 0;
+  width: 5.5rem;
+  height: auto;
+}
+
+.bds-search-counter__text .bds-section__heading {
+  margin-bottom: 0.75rem;
+}
+
+.bds-search-counter__stat {
+  margin: 0.25rem 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 
 .bds-form__status {
@@ -862,6 +917,11 @@ body {
 
   .bds-form__row {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bds-search-counter {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .site-nav__link--text {

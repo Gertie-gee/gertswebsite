@@ -117,6 +117,7 @@ function formDataToPayload(form) {
     kilometres: data.get("kilometres") || "(not provided)",
     owned_duration: data.get("owned_duration") || "(not provided)",
     mazda_story: data.get("mazda_story") || "(not provided)",
+    mazda_name: data.get("mazda_name") || "(not provided)",
     tshirt_size: data.get("tshirt_size"),
     attendance: data.get("attendance"),
     email_consent: data.get("email_consent") ? "yes" : "no",
@@ -176,14 +177,14 @@ async function submitRallyForm(form) {
       statusEl.classList.add("bds-form__status--error");
     }
     submitBtn.disabled = false;
-    submitBtn.textContent = "Count me in";
+    submitBtn.textContent = "Add my Mazda";
   }
 }
 
 function showSuccess(form, statusEl) {
   form.hidden = true;
-  const intro = document.querySelector(".bds-form__intro");
-  if (intro) intro.hidden = true;
+  const header = document.querySelector(".bds-form__header");
+  if (header) header.hidden = true;
   const privacy = document.querySelector(".bds-form__privacy");
   if (privacy) privacy.hidden = true;
   const success = document.getElementById("rally-success");
